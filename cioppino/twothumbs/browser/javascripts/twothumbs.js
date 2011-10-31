@@ -1,6 +1,6 @@
 jQuery(function(jq){
 
-	jq('body').delegate('.thumb-rating form input', 'click', function(event) {
+	jq('.thumb-rating form input').live('click', function(event) {
 		event.preventDefault();
 		var me = jq(this);
 		var form = me.closest('form');
